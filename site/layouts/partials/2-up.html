@@ -5,20 +5,66 @@
 
     <div class="flex-ns mhn2-ns mb3">
       <div class="ph2-ns w-50-ns">
-        <img src="{{.svg1}}" alt="" class="center db mb3" style="width: 240px">
-        <p>{{.text1}}</p>
+        <!--<img src="{{.svg1}}" alt="" class="center db mb3" style="width: 240px">
+         <p>{{.text1}}</p> -->
+        <p>For the past 12 years, I’ve handcrafted and led the implementation of several enterprise web applications and
+          websites. I have worked in many cutting edge technology companies and gained experience in a variety of
+          programming languages.</p>
+
+        <p>Outside of work, I tinker with electronics and I’m a go-to Mr. Fix-it. When I’m not in front of a computer, I
+          can be found in a spin class, on a long bike ride around the Twin Cities (weather permitting), or at the
+          hardware store picking up supplies for my next home improvement project.</p>
+
+        <p>My friends would describe me as: intuitive, introverted, diligent, loyal, life-of-the-party, and
+          family-oriented. I consider myself a leader within my community and aspire to be a role model for the next
+          generation.</p>
+
+          <br/>
+          <div class="">
+              <a href="https://www.linkedin.com/in/christelngani/" target="_blank" class="btn raise">View my Profile on LinkedIn <i class="fab fa-linkedin"></i></a>
+          </div>
       </div>
 
-      <div class="ph2-ns w-50-ns">
-        <img src="{{.svg2}}" alt="" class="center db mb3" style="width: 240px">
-        <p>{{.text2}}</p>
+      <div class="ph2-ns w-50-ns white" style="background-color: #3cc7c6; padding-top: 15px; padding-bottom: 15px;">
+        <!-- <p>{{.text2}}</p> -->
+        <div>
+          <i class="fa fa-lg fa-laptop"></i><span style="font-weight: 900;"> Web Development</span><br />
+          <span class="font-weight: 900;">Java, Javascript, React, JQuery, WordPress, ES6, HTML5, CSS, Oracle, XML, SQL,
+            Spring, Hibernate, Selenium, Github, SVN, MVC</span>
+        </div>
+        <br />
+        <div>
+          <i class="fa fa-lg fa-brain"></i><span style="font-weight: 900;"> Artificial Intelligence</span><br />
+          <span class="font-weight: 900;">Chatbot, Virtual Assistant, AI Strategy and delivery</span>
+        </div>
+
+        <br />
+        <div>
+          <i class="fa fa-lg fa-cogs"></i><span style="font-weight: 900;"> Skills</span><br />
+          <span class="font-weight: 900;">Agile Methodology, Wireframes & Prototypes, Design, Coaching, Team Management,
+            Strategy/Planning/Estimation</span>
+        </div>
+
+        <br />
+        <div>
+          <i class="fa fa-lg fa-briefcase"></i><span style="font-weight: 900;"> Tools</span><br />
+          <span class="font-weight: 900;">Eclipse, SublimeText, Programmer’s Notepad, PowerDesigner, Sharepoint, JIRA, Confluence, MagicDrawUML, Photoshop</span>
+        </div>
+
+        <br />
+        <div>
+          <i class="fa fa-lg fa-bicycle"></i><span style="font-weight: 900;"> Cycling</span><br />
+          <span class="font-weight: 900;">Road cycling, Spin class, Mountain biking, Strava</span>
+        </div>
+
+
       </div>
     </div>
 
     {{ if .buttonText }}
-      <div class="tc">
-        <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
-      </div>
+    <div class="tc">
+      <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
+    </div>
     {{ end }}
   </div>
 </div>
