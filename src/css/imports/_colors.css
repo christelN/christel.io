@@ -32,6 +32,10 @@
   color: var(--grey-4);
 }
 
+.grey-5 {
+  color: var(--grey-5);
+}
+
 .black {
   color: var(--black);
 }
