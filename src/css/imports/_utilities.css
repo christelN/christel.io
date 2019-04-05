@@ -36,11 +36,29 @@
   margin-left: auto;
 }
 
-.icon-scroll,
-.icon-scroll:before {
-  position: absolute;
-  left: 50%;
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+  .icon-scroll { display: none;}
 }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+  .icon-scroll { display: none;}
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ .icon-scroll,
+  .icon-scroll:before {
+    position: absolute;
+    left: 45%;
+    top: 65%;
+  }}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ .icon-scroll,
+  .icon-scroll:before {
+    position: absolute;
+    left: 45%;
+    top: 65%;
+  }}
+
+
 .icon-scroll {
   width: 40px;
   height: 70px;
@@ -52,7 +70,6 @@
   width: 8px;
   height: 8px;
   background: #3cc7c6;
-  margin-left: -4px;
   top: 8px;
   border-radius: 4px;
   -webkit-animation-duration: 1.5s;
