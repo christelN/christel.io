@@ -61,7 +61,7 @@
 				<ul class="mb3" style="font-weight: bold;">
 					<li><a href="mailto:hello@christel.io" target="_blank" class="link">hello@christel.io</a></li>
 				</ul>
-			</div> 
+			</div>
 
 			<div>
 				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
@@ -73,13 +73,28 @@
 		</div>
 	</div>
 
-	<div class="mw7 center pt3">Made with Love in beautiful Twin Cities</div>
+	<div class="" style="text-align: center; font-size: 18px;">Made with <i class="fas fa-heart"></i> in beautiful Twin
+		Cities</div>
 
 </footer>
 
 {{ partial "svg" . }}
 
 <script src="/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+<script>
+
+	var options = {
+		strings: ["Father ^1000", "Husband ^1000", "Brother ^1000", "Son ^1000"],
+		typeSpeed: 60,
+		loop: true,
+		cursorChar: "_"
+	}
+
+	var typed = new Typed(".allfunctions", options);
+
+</script>
 
 </body>
 

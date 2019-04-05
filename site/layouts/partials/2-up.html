@@ -25,50 +25,48 @@
           <a href="https://www.linkedin.com/in/christelngani/" target="_blank" class="btn raise">View my Profile on
             LinkedIn <i class="fab fa-linkedin"></i></a>
         </div>
+      </div>
+
+      <div class="ph2-ns w-50-ns white" style="background-color: #3cc7c6; padding: 15px 15px 15px 15px;">
+        <div>
+          <i class="fa fa-lg fa-laptop"></i><span class="f7"> Web Development</span><br />
+          <span class="f8">Java, Javascript, React, Redux, ES6, JQuery, WordPress, HTML5, CSS,
+            Oracle, XML, SQL,
+            Spring, Hibernate, Selenium, Github, SVN, MVC</span>
+        </div>
+        <br />
+        <div>
+          <i class="fa fa-lg fa-brain"></i><span class="f7"> Artificial Intelligence</span><br />
+          <span class="f8">Chatbot, Virtual Assistant, AI Strategy and delivery</span>
+        </div>
+
+        <br />
+        <div>
+          <i class="fa fa-lg fa-cogs"></i><span class="f7"> Skills</span><br />
+          <span class="f8">Agile Methodology, Wireframes & Prototypes, Design, Coaching, Team Management,
+            Strategy/Planning/Estimation</span>
+        </div>
+
+        <br />
+        <div>
+          <i class="fa fa-lg fa-briefcase"></i><span class="f7"> Tools</span><br />
+          <span class="f8">Visual Studio Code, Eclipse, SublimeText, PowerDesigner, Sharepoint, JIRA, Confluence,
+            MagicDrawUML, Photoshop</span>
+        </div>
+
+        <br />
+        <div>
+          <i class="fa fa-lg fa-bicycle"></i><span class="f7"> Cycling</span><br />
+          <span class="f8">Road cycling, Spin class, Mountain biking, Strava</span>
+        </div>
 
       </div>
     </div>
 
-    <div class="ph2-ns w-50-ns white" style="background-color: #3cc7c6; padding: 15px 15px 15px 15px;">
-      <!-- <p>{{.text2}}</p> -->
-      <div>
-        <i class="fa fa-lg fa-laptop"></i><span style="font-weight: 900;"> Web Development</span><br />
-        <span>Java, Javascript, React, JQuery, WordPress, ES6, HTML5, CSS, Oracle, XML, SQL,
-          Spring, Hibernate, Selenium, Github, SVN, MVC</span>
-      </div>
-      <br />
-      <div>
-        <i class="fa fa-lg fa-brain"></i><span style="font-weight: 900;"> Artificial Intelligence</span><br />
-        <span>Leading AI and Chatbot/Virtual-Assistant initiatives, AI Strategy and delivery</span>
-      </div>
-
-      <br />
-      <div>
-        <i class="fa fa-lg fa-cogs"></i><span style="font-weight: 900;"> Skills</span><br />
-        <span>Agile Methodology, Wireframes & Prototypes, Design, Coaching, Team Management,
-          Strategy/Planning/Estimation</span>
-      </div>
-
-      <br />
-      <div>
-        <i class="fa fa-lg fa-briefcase"></i><span style="font-weight: 900;"> Tools</span><br />
-        <p style="font-weight: 100;">Visual Studio Code, Eclipse, SublimeText, PowerDesigner, Sharepoint, JIRA,
-          Confluence, MagicDrawUML, Photoshop</p>
-      </div>
-
-      <br />
-      <div>
-        <i class="fa fa-lg fa-bicycle"></i><span style="font-weight: 900;"> Cycling</span><br />
-        <span>Road cycling, Spin class, Mountain biking, Strava</span>
-      </div>
-
+    {{ if .buttonText }}
+    <div class="tc">
+      <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
     </div>
+    {{ end }}
   </div>
-
-  {{ if .buttonText }}
-  <div class="tc">
-    <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
-  </div>
-  {{ end }}
-</div>
 </div>
