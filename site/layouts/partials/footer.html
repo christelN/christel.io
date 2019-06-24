@@ -65,8 +65,8 @@
 
 			<div>
 				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
-				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "https://www.linkedin.com/in/christelngani/" "svg" "linkedin") }}
+				<ul class="mhn2">					
+					<a href="https://www.linkedin.com/in/christelngani/" target="_blank"><i class="fab fa-linkedin"></i></a>					  
 				</ul>
 			</div>
 
@@ -94,6 +94,36 @@
 
 	var typed = new Typed(".allfunctions", options);
 
+
+	/* function chatbotInit() {
+		var div = document.createElement("div");
+		document.getElementsByTagName('body')[0].appendChild(div);
+		div.outerHTML = "<div id='botDiv' style='height: 38px; box-shadow:0 5px 15px rgba(0,0,0,0.4); position: fixed; bottom: 0; right:35px; background-color: #202430'><div id='botTitleBar' style='height: 38px; width: 400px;color: #FFF;background: -webkit-linear-gradient(#FFF, #FFF); -webkit-background-clip: text;-webkit-text-fill-color: transparent; padding: 10px; position:fixed; cursor: pointer;'> Chatbot (Online Now)</div><iframe style='padding-top: 38px;' width='400px' height='600px' src='https://console.dialogflow.com/api-client/demo/embedded/f69854ac-f1cb-4b99-951f-259685268d35'></iframe></div>";
+		document.getElementById('botTitleBar').addEventListener('click', function (e) {
+			e.target.matches = e.target.matches || e.target.msMatchesSelector;
+			if (e.target.matches('#botTitleBar')) {
+				var botDiv = document.querySelector('#botDiv');
+				botDiv.style.height = botDiv.style.height == '600px' ? '38px' : '600px';
+			};
+		});
+	}
+
+
+	document.addEventListener("DOMContentLoaded", function () {
+		chatbotInit()
+	}); */
+</script>
+
+<script 
+    defer="true" type="text/javascript" 
+    botId="5cebebf07ac2131250f5dbaa" 
+    class="botcopy-embedder-d7lcfheammjct" 
+    id="botcopy-embedder-d7lcfheammjct"> 
+    var s = document.createElement('script'); 
+    s.type = 'text/javascript'; s.async = true; 
+    s.src = 'https://d7lcfheammjct.cloudfront.net/js/injection.js'; 
+    var embedder = document.getElementById('botcopy-embedder-d7lcfheammjct'); 
+    embedder.parentNode.insertBefore(s, embedder); 
 </script>
 
 </body>
